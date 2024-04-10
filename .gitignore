@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+.vscode
+package-lock.json
+pnpm-lock.yaml
+coverage/
+.rpt2_cache/
+.idea

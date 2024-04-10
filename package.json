@@ -1,0 +1,32 @@
+{
+  "name": "react-handle-alert",
+  "version": "0.1.0",
+  "description": "A React library to handle alert and confirm.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryxxn/react-handle-alert.git"
+  },
+  "keywords": [
+    "react",
+    "react-alert",
+    "react-confirm",
+    "alert",
+    "confirm",
+    "dialog"
+  ],
+  "author": "Dochi <drxxn00@gmail.com>",
+  "license": "MIT"
+}
