@@ -37,6 +37,11 @@ handleAlert("alert message")
 handleConfirm("confirm message").then(action => {
   console.log(action ? "confirm", "cancel");
 })
+
+# OR
+const action = await handleConfirm("confirm message");
+console.log(action ? "confirm", "cancel");
+
 ```
 
 ## Customization
