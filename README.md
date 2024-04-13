@@ -85,3 +85,8 @@ export const useModal = () => {
 | `cancelButton`   | Text and style for the cancel button  | `Object`         | `{ text: "Cancel", style: { backgroundColor: "red", color: "white", border: "none" } }` |
 | `confirmButton`  | Text and style for the confirm button | `Object`         | `{ text: "Confirm", style: { backgroundColor: "green" } }`  |
 
+## License
+MIT © dochi.
+
+<img width="100" height="100" alt="dochi_logo" src="https://github.com/ryxxn/react-handle-alert/assets/88328436/5bb692d4-4155-45cd-aab7-3c1978d759ef" />
+
