@@ -1,15 +1,9 @@
-/**
- * @description Modal Styles Options
- */
 interface ModalOptions {
   backgroundStyle?: React.CSSProperties;
   style?: React.CSSProperties;
   className?: string;
 }
 
-/**
- * @description Modal Button Options
- */
 interface Button {
   text?: string;
   style?: React.CSSProperties;
