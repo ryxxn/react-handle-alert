@@ -27,7 +27,7 @@
 .rha-modal-box .rha-button-group {
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .rha-modal-box .rha-button-group button {
   all: initial;

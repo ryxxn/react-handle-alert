@@ -1,5 +1,6 @@
 interface ModalOptions {
   backgroundStyle?: React.CSSProperties;
+  buttonGroupStyle?: React.CSSProperties;
   style?: React.CSSProperties;
   className?: string;
 }
