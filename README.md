@@ -1,6 +1,6 @@
 # react-handle-alert
 
-`react-handle-alert` is a library designed to facilitate the implementation of custom alert and confirm modals in React applications. This library allows you to easily add styled modals instead of using standard JavaScript alert and confirm dialog boxes.
+`react-handle-alert` is designed to be used as pure functions without the need for integrating any components into your React component tree. This makes it incredibly easy to trigger alerts and confirmations directly from your functional logic or event handlers. 
 
 ## Example
 <div align="center">
@@ -56,7 +56,7 @@ export const useModal = () => {
       backgroundStyle: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
       style: { backgroundColor: "white", color: "black" },
       button: {
-        text: "close",
+        text: "close",
         style: { backgroundColor: "blue" },
       },
     });
@@ -66,7 +66,7 @@ export const useModal = () => {
       backgroundStyle: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
       style: { backgroundColor: "white", color: "black" },
       cancelButton: {
-        text: "calcel",
+        text: "cancel",
         style: { backgroundColor: "red", border: "none", color: "white" },
       },
       confirmButton: {
