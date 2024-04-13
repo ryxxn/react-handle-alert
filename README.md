@@ -8,7 +8,7 @@
 - **Custom Confirms**: Enables the implementation of confirmation dialogs that require user decisions.
 - **Fully Customizable**: Allows for the customization of modal backgrounds, styles, button texts, and button styles.
 
-##Getting Started
+## Getting Started
 
 ```bash
 npm install react-handle-alert
