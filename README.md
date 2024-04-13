@@ -2,6 +2,14 @@
 
 `react-handle-alert` is a library designed to facilitate the implementation of custom alert and confirm modals in React applications. This library allows you to easily add styled modals instead of using standard JavaScript alert and confirm dialog boxes.
 
+## Example
+<div align="center">
+  
+  ![react-handle-alert](https://github.com/ryxxn/react-handle-alert/assets/88328436/08da28ff-d058-48eb-b6b6-52b5951ba18d)
+  
+</div>
+
+
 ## Features
 
 - **Custom Alerts**: Displays custom alerts that provide information to users.
