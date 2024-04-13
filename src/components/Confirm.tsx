@@ -8,6 +8,7 @@ export function ConfirmModal({
   onCancel,
   className = "",
   backgroundStyle = {},
+  buttonGroupStyle = {},
   style = {},
   confirmButton = {
     text: "Ok",
@@ -35,7 +36,7 @@ export function ConfirmModal({
     >
       <div className="rha-modal-box" style={style}>
         <p>{text}</p>
-        <div className="rha-button-group">
+        <div className="rha-button-group" style={buttonGroupStyle}>
           <button
             type="button"
             className="outlined"
