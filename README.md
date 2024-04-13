@@ -1,30 +1,23 @@
 # react-handle-alert
 
-`react-handle-alert`는 React 애플리케이션에서 사용자 정의 경고(alert) 및 확인(confirm) 모달을 쉽게 구현할 수 있도록 도와주는 라이브러리입니다. 이 라이브러리를 사용하면 표준 JavaScript alert 및 confirm 대화 상자 대신 스타일링이 가능한 모달을 손쉽게 추가할 수 있습니다.
+`react-handle-alert` is a library designed to facilitate the implementation of custom alert and confirm modals in React applications. This library allows you to easily add styled modals instead of using standard JavaScript alert and confirm dialog boxes.
 
-## 기능
+## Features
 
-- **Custom Alerts**: 사용자에게 정보를 제공하는 커스텀 경고창을 표시합니다.
-- **Custom Confirms**: 사용자의 결정을 요구하는 확인창을 구현할 수 있습니다.
-- **Fully Customizable**: 모달의 배경, 스타일, 버튼 텍스트 및 버튼 스타일을 사용자 정의할 수 있습니다.
+- **Custom Alerts**: Displays custom alerts that provide information to users.
+- **Custom Confirms**: Enables the implementation of confirmation dialogs that require user decisions.
+- **Fully Customizable**: Allows for the customization of modal backgrounds, styles, button texts, and button styles.
 
-## 설치
-
-npm을 사용하여 설치:
+##Getting Started
 
 ```bash
 npm install react-handle-alert
-```
 
-yarn을 사용하여 설치:
-
-```bash
 yarn add react-handle-alert
 ```
 
-## 사용법
-
-아래는 react-handle-alert 라이브러리를 사용하는 기본적인 예제입니다:
+## Usage
+Below is a basic example of how to use the react-handle-alert library:
 
 ```javascript
 import { handleAlert, handleConfirm } from "react-handle-alert";
@@ -38,9 +31,8 @@ handleConfirm("confirm message").then(action => {
 })
 ```
 
-## Custom
-
-커스텀 훅 또는 파일을 이용해 Custom이 가능합니다.
+## Customization
+Customization is possible using custom hooks or files.
 
 ```javascript
 import { handleAlert, handleConfirm } from "react-handle-alert";
@@ -51,7 +43,7 @@ export const useModal = () => {
       backgroundStyle: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
       style: { backgroundColor: "white", color: "black" },
       button: {
-        text: "닫기",
+        text: "close",
         style: { backgroundColor: "blue" },
       },
     });
@@ -61,11 +53,11 @@ export const useModal = () => {
       backgroundStyle: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
       style: { backgroundColor: "white", color: "black" },
       cancelButton: {
-        text: "취소",
+        text: "calcel",
         style: { backgroundColor: "red", border: "none", color: "white" },
       },
       confirmButton: {
-        text: "확인",
+        text: "confirm",
         style: { backgroundColor: "green" },
       },
     });
@@ -74,4 +66,14 @@ export const useModal = () => {
 };
 
 ```
+
+## Options
+
+| Option           | Description                           | Type             | Default Value                                               |
+|------------------|---------------------------------------|------------------|-------------------------------------------------------------|
+| `backgroundStyle`| Style for the modal background        | `CSSProperties`  | `{ backgroundColor: "rgba(0, 0, 0, 0.3)" }`                 |
+| `style`          | Style for the modal body              | `CSSProperties`  | `{ backgroundColor: "white", color: "black" }`              |
+| `button`         | Text and style for the default button | `Object`         | `{ text: "Close", style: { backgroundColor: "blue" } }`     |
+| `cancelButton`   | Text and style for the cancel button  | `Object`         | `{ text: "Cancel", style: { backgroundColor: "red", color: "white", border: "none" } }` |
+| `confirmButton`  | Text and style for the confirm button | `Object`         | `{ text: "Confirm", style: { backgroundColor: "green" } }`  |
 
