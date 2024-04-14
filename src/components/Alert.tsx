@@ -9,10 +9,7 @@ export function AlertModal({
   buttonGroupStyle = {},
   style = {},
   className = "",
-  button = {
-    text: "Ok",
-    style: {},
-  },
+  button = {},
 }: AlertModalProps) {
   const bgRef = React.useRef(null);
 
@@ -31,9 +28,9 @@ export function AlertModal({
     >
       <div className="rha-modal-box" style={style}>
         <p>{text}</p>
-        <div className="rha-button-group" style={buttonGroupStyle}>
-          <button onClick={onClose} style={button.style}>
-            {button.text}
+         <div className="rha-button-group" style={buttonGroupStyle}>
+          <button onClick={onClose} style={button.style || {}}>
+            {button.text || "Ok"}
           </button>
         </div>
       </div>

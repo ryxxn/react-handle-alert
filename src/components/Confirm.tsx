@@ -10,14 +10,8 @@ export function ConfirmModal({
   backgroundStyle = {},
   buttonGroupStyle = {},
   style = {},
-  confirmButton = {
-    text: "Ok",
-    style: {},
-  },
-  cancelButton = {
-    text: "Cancel",
-    style: {},
-  },
+  confirmButton = {},
+  cancelButton = {},
 }: ConfirmModalProps) {
   const bgRef = React.useRef(null);
 
@@ -41,12 +35,16 @@ export function ConfirmModal({
             type="button"
             className="outlined"
             onClick={onCancel}
-            style={cancelButton.style}
+            style={cancelButton.style || {}}
           >
-            {cancelButton.text}
+            {cancelButton.text || "Cancel"}
           </button>
-          <button type="button" onClick={onConfirm} style={confirmButton.style}>
-            {confirmButton.text}
+          <button
+            type="button"
+            onClick={onConfirm}
+            style={confirmButton.style || {}}
+          >
+            {confirmButton.text || "Ok"}
           </button>
         </div>
       </div>
