@@ -12,11 +12,12 @@ export function ConfirmModal({
   style = {},
   confirmButton = {},
   cancelButton = {},
+  closeOnBackgroundClick = true,
 }: ConfirmModalProps) {
   const bgRef = React.useRef(null);
 
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === bgRef.current) {
+    if (closeOnBackgroundClick && e.target === bgRef.current) {
       onCancel();
     }
   };
