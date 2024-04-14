@@ -3,6 +3,7 @@ interface ModalOptions {
   buttonGroupStyle?: React.CSSProperties;
   style?: React.CSSProperties;
   className?: string;
+  closeOnBackgroundClick?: boolean;
 }
 
 interface Button {

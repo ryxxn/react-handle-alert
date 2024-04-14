@@ -10,11 +10,12 @@ export function AlertModal({
   style = {},
   className = "",
   button = {},
+  closeOnBackgroundClick = true,
 }: AlertModalProps) {
   const bgRef = React.useRef(null);
 
   const handleClickBackground = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === bgRef.current) {
+    if (closeOnBackgroundClick && e.target === bgRef.current) {
       onClose();
     }
   };
@@ -28,7 +29,7 @@ export function AlertModal({
     >
       <div className="rha-modal-box" style={style}>
         <p>{text}</p>
-         <div className="rha-button-group" style={buttonGroupStyle}>
+        <div className="rha-button-group" style={buttonGroupStyle}>
           <button onClick={onClose} style={button.style || {}}>
             {button.text || "Ok"}
           </button>
