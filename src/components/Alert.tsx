@@ -6,6 +6,7 @@ export function AlertModal({
   text,
   onClose,
   backgroundStyle = {},
+  buttonGroupStyle = {},
   style = {},
   className = "",
   button = {
@@ -30,7 +31,7 @@ export function AlertModal({
     >
       <div className="rha-modal-box" style={style}>
         <p>{text}</p>
-        <div className="rha-button-group">
+        <div className="rha-button-group" style={buttonGroupStyle}>
           <button onClick={onClose} style={button.style}>
             {button.text}
           </button>
