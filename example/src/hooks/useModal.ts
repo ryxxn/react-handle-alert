@@ -9,6 +9,7 @@ export const useModal = () => {
         text: "close!",
         style: { backgroundColor: "blue" },
       },
+      closeOnBackgroundClick: false,
     });
 
   const customConfirm = async (text: string) =>
@@ -17,7 +18,7 @@ export const useModal = () => {
       style: { backgroundColor: "white", color: "black" },
       cancelButton: {
         text: "cancel!",
-        style: { backgroundColor: "red", border: "none", color: "white" },
+        style: { backgroundColor: "red", outline: "none", color: "white" },
       },
       confirmButton: {
         text: "Ok!",
