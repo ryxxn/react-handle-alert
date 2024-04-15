@@ -30,7 +30,7 @@ export function ConfirmModal({
       style={backgroundStyle}
     >
       <div className="rha-modal-box" style={style}>
-        <p>{text}</p>
+        {text}
         <div className="rha-button-group" style={buttonGroupStyle}>
           <button
             type="button"
