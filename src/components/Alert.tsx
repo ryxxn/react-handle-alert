@@ -28,7 +28,7 @@ export function AlertModal({
       style={backgroundStyle}
     >
       <div className="rha-modal-box" style={style}>
-        <p>{text}</p>
+        {text}
         <div className="rha-button-group" style={buttonGroupStyle}>
           <button onClick={onClose} style={button.style || {}}>
             {button.text || "Ok"}
