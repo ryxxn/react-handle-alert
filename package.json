@@ -1,6 +1,6 @@
 {
   "name": "react-handle-alert",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A React library to handle alert and confirm without components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsc && cp src/**/*.css dist/components/"
   },
-  "homepage": "https://react-handle-alert.vercel.app/",
+  "homepage": "https://react-handle-alert.vercel.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ryxxn/react-handle-alert.git"
