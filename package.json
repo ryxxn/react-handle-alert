@@ -25,6 +25,7 @@
   "scripts": {
     "build": "tsc && cp src/**/*.css dist/components/"
   },
+  "homepage": "https://react-handle-alert.vercel.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ryxxn/react-handle-alert.git"
