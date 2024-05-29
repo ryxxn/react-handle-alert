@@ -15,7 +15,7 @@ const removeFocus = () => {
 
 const addFadeOutEvent = (callback: () => void) => {
   const modalBox = document.querySelector(".rha-modal-box") as HTMLElement;
-  modalBox.style.animation = "fadeOut 0.1s ease";
+  modalBox.style.animation = "rha-fade-out 0.1s ease";
   modalBox.addEventListener("animationend", callback);
 };
 

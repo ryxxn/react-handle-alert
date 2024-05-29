@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  animation: 0.2s fadeIn;
+  animation: 0.2s rha-fade-in;
 }
 .rha-modal-box .rha-button-group {
   display: flex;
@@ -52,7 +52,7 @@
 .rha-confirm-modal .rha-modal-box {
   background-color: #fff;
 }
-@keyframes fadeIn {
+@keyframes rha-fade-in {
   from {
     transform: scale(0.9);
     opacity: 0;
@@ -62,7 +62,7 @@
     opacity: 1;
   }
 }
-@keyframes fadeOut {
+@keyframes rha-fade-out {
   from {
     transform: scale(1);
     opacity: 1;
