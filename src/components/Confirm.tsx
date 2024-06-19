@@ -1,5 +1,5 @@
 import React from "react";
-import "../react-handle-alert.css";
+import "./style.css";
 import { ConfirmModalProps } from "../types";
 
 export function ConfirmModal({

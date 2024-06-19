@@ -1,5 +1,5 @@
 import React from "react";
-import "../react-handle-alert.css";
+import "./style.css";
 import { AlertModalProps } from "../types";
 
 export function AlertModal({
@@ -30,7 +30,7 @@ export function AlertModal({
       <div className="rha-modal-box" style={style}>
         {text}
         <div className="rha-button-group" style={buttonGroupStyle}>
-          <button type="button" onClick={onClose} style={button.style || {}}>
+          <button onClick={onClose} style={button.style || {}}>
             {button.text || "Ok"}
           </button>
         </div>
