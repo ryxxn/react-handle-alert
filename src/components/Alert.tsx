@@ -1,5 +1,5 @@
 import React from "react";
-import "./react-handle-alert.css";
+import "../react-handle-alert.css";
 import { AlertModalProps } from "../types";
 
 export function AlertModal({
