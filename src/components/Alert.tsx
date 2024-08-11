@@ -1,6 +1,9 @@
 import React from "react";
-import "./style.css";
+import styles from "./style.module.css";
 import { AlertModalProps } from "../types";
+import { bindClassNames } from "../utils";
+
+const cn = bindClassNames(styles);
 
 export function AlertModal({
   text,
@@ -22,14 +25,14 @@ export function AlertModal({
 
   return (
     <div
-      className={`rha-alert-modal ${className}`}
+      className={cn('rha-alert-modal', className)}
       ref={bgRef}
       onClick={handleClickBackground}
       style={backgroundStyle}
     >
-      <div className="rha-modal-box" style={style}>
+      <div className={cn("rha-modal-box")} style={style}>
         {text}
-        <div className="rha-button-group" style={buttonGroupStyle}>
+        <div className={cn("rha-button-group")} style={buttonGroupStyle}>
           <button onClick={onClose} style={button.style || {}}>
             {button.text || "Ok"}
           </button>
