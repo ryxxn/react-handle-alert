@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./style.module.css";
+import styles from "../style.module.css";
 import { ConfirmModalProps } from "../types";
 import { bindClassNames } from "../utils";
 
