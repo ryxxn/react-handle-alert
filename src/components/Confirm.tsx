@@ -1,6 +1,9 @@
 import React from "react";
-import "./style.css";
+import styles from "./style.module.css";
 import { ConfirmModalProps } from "../types";
+import { bindClassNames } from "../utils";
+
+const cn = bindClassNames(styles);
 
 export function ConfirmModal({
   text,
@@ -24,14 +27,14 @@ export function ConfirmModal({
 
   return (
     <div
-      className={`rha-confirm-modal ${className}`}
+      className={cn('rha-confirm-modal', className)}
       ref={bgRef}
       onClick={handleClickBackground}
       style={backgroundStyle}
     >
-      <div className="rha-modal-box" style={style}>
+      <div className={cn('rha-modal-box')} style={style}>
         {text}
-        <div className="rha-button-group" style={buttonGroupStyle}>
+        <div className={cn('rha-button-group')} style={buttonGroupStyle}>
           <button
             type="button"
             className="outlined"
