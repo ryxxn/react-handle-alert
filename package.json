@@ -1,6 +1,6 @@
 {
   "name": "react-handle-alert",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "A React library to handle alert and confirm without components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
