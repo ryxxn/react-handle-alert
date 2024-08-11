@@ -1,9 +1,13 @@
 import { createRoot } from "react-dom/client";
 import { AlertModal, ConfirmModal } from "./components";
 import { ConfirmOptions, AlertOptions } from "./types";
+import styles from "./style.module.css";
 
-const confirmContainerId = "rha-confirm-container";
+const modalBoxClass = styles["rha-modal-box"];
+const animationName = styles["rha-fade-out"];
+
 const alertContainerId = "rha-alert-container";
+const confirmContainerId = "rha-confirm-container";
 
 /**
  * Remove focus from the active element
@@ -14,8 +18,8 @@ const removeFocus = () => {
 };
 
 const addFadeOutEvent = (callback: () => void) => {
-  const modalBox = document.querySelector(".rha-modal-box") as HTMLElement;
-  modalBox.style.animation = "rha-fade-out 0.1s ease";
+  const modalBox = document.querySelector(`.${modalBoxClass}`) as HTMLElement;
+  modalBox.style.animation = `${animationName} 0.1s ease`;
   modalBox.addEventListener("animationend", callback);
 };
 
